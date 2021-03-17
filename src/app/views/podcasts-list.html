@@ -1,0 +1,18 @@
+<main data-view="main" class="podcasts-list-section">
+    <aside class="podcasts-filter">
+        <span id="counter" class="podcasts-counter"></span>
+        <input id="filterPodcasts" type="text" placeholder="Filter podcasts...">
+    </aside>
+    <section data-property="podcasts"id="podcasts" class="podcasts-list grid-cols-4">
+        <template id="podcastTemplate">
+            <a class="podcast-item" data-router="podcast-detail">
+                <img class="podcast-image">
+                <h2 class="podcast-name"></h2>
+                <h3 class="podcast-author">
+                    <span class="field-label">Author:</span>
+                    <span class="field-value"></span>
+                </h3>
+            </a>
+        </template>
+    </section>
+</main>

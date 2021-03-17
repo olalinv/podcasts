@@ -1,0 +1,41 @@
+@media(min-width: 768px) {
+
+    /* Elements */
+
+    body {
+        margin: auto;
+        max-width: 75%;
+    }
+
+    /* Grid */
+
+    .grid-cols-4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .grid-sidebar-content {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 25% calc(75% - 50px);
+        grid-template-areas: "sidebar content";
+    }
+
+    /* Podcasts list */
+
+    .podcasts-list .podcast-item {
+        margin: 50px 0;
+    }
+
+    /* Podcast detail */
+
+    .podcast-detail-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    
+}

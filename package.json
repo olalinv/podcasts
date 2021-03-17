@@ -1,0 +1,26 @@
+{
+  "name": "podcasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://robottitto@bitbucket.org/robottitto/podcasts.git"
+  },
+  "author": "robottitto",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/robottitto/podcasts#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}

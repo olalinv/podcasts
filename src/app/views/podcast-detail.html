@@ -1,0 +1,54 @@
+<main data-view="main" class="podcast-detail-section grid-sidebar-content">
+  <aside>
+    <a data-router="podcast-detail" class="podcast-info">
+      <img class="podcast-image">
+      <hr>
+      <h2 class="podcast-name"></h2>
+      <h3 class="podcast-author">
+        <span class="field-label">
+          by
+        </span>
+        <span class="field-value"></span>
+      </h3>
+      <hr>
+      <div class="podcast-description">
+        <div class="field-label">
+          <b>Description:</b>
+        </div>
+        <div class="field-value text-break"></div>
+      </div>
+    </a>
+  </aside>
+  <section data-view="detail">
+    <div class="podcast-detail">
+      <div class="episodes-count">
+        <span class="field-label">
+          Episodes:
+        </span>
+        <span class="field-value"></span>
+      </div>
+      <div id="episodesList" class="episodes-list">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th scope="col" class="episode-title">Title</th>
+              <th scope="col" class="episode-date">Date</th>
+              <th scope="col" class="episode-duration">Duration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <template id="episodeTemplate">
+              <tr>
+                <td class="episode-title">
+                  <a data-router="episode-detail" class="episode-link"></a>
+                </td>
+                <td class="episode-date"></td>
+                <td class="episode-duration"></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
